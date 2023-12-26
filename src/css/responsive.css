@@ -12,13 +12,10 @@
     }
 
     .logo {
-        display: block;
-        padding-top: 350px;
-        justify-content: space-between;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        min-height: 75px;
-        text-align: center;
-      }
+    }
 
     .section-information {
         display: block;
