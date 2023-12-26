@@ -1,8 +1,30 @@
 @media screen and (max-width: 1024px) {
     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
         background-image: url('../images/bg-mobile.svg');
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .logo {
+        display: block;
+        padding-top: 350px;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+        text-align: center;
+      }
+
+    .section-information {
+        display: block;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
     }
 
     .container {
@@ -44,22 +66,23 @@
         align-items: center;
     }
 
-    @media screen and (max-width: 800px) {
-        .image img {
-            width: 660;
-        }
+@media screen and (max-width: 800px) {
+    .image img {
+        width: 660;
     }
+}
 
     @media screen and (max-width: 798px) {
         .image img {
             width: 460px;
         }
-    }
+     }
 
-    @media screen and (max-width: 500px) {
+     @media screen and (max-width: 500px) {
 
         .logo img {
             width: 120px;
+            padding-top: none;
         }
 
         .image img {

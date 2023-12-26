@@ -1,11 +1,14 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   height: 100vh;
   background-image: url('../images/bg-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-text);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #ffffff;
 }
 
@@ -43,7 +46,6 @@ body {
 .section-information .title {
   font-size: 26px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
   padding-top: 50px;
   padding-bottom: 20px;
 }
@@ -62,10 +64,11 @@ body {
 
 .button a {
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   justify-content: center;
   align-items: center;
-  background-color: var(--button-text-icons);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: var(--background-text);
   font-weight: 400;
   font-size: 20px;
   width: 200px;
@@ -74,14 +77,18 @@ body {
 }
 
 .button a:hover {
-  background-color: #ffffff;
-  color: var(--background-text);
+  background-color: var(--button-text-icons);
+  color: #ffffff;
 }
 
 .footer {
   display: flex;
   justify-content: end;
-  align-items: row;
+  align-self: center;
+}
+
+.social ul{
+  display: flex;
   padding-left: 40px;
   padding-top: 25px;
   padding-bottom: 60px;
